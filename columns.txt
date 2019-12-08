@@ -1,0 +1,13 @@
+0	No.	Number
+1	Time	Time(format as specified)
+1	Source Source address
+1	Source Port	Src port(unresolved)
+1	Destination	Destination address
+1	Destination Port	Dest Port(unresolved)
+0	Protocol	Protocol
+1	Length	Packet length (bytes)
+1	Host	Custom	http.host	0
+1	Server Name	Custom	tls.handshake.extensions_server_name	0
+1	DNS Name	Custom	dns.qry.name	0
+1	CNameString Custom	kerberos.CNameString	0
+1	Info	Infomation

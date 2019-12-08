@@ -1,0 +1,23 @@
+Basic
+(http.request or tls.handshake.type == 1) and !(udp.port eq 1900)
+
+Basic+
+(http.request or tls.handshake.type == 1 or tcp.flags eq 0x0002) and !(udp.port eq 1900)
+
+Simple Mail Hunthing
+smtp contains "From: "
+
+Basic+ DNS
+(http.request or tls.handshake.type == 1 or tcp.flags eq 0x0002 or dns) and !(udp.port eq 1900)
+
+httpport
+http.request and tcp.port eq 8082
+
+SMTP
+smtp.data.fragment
+
+FTP
+ftp.request.command
+
+FTP-DATA
+ftp-data
